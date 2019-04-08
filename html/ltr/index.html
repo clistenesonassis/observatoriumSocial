@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="educacao-index.html" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
+                            <a href="educacao.html" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
                                 <i class="mdi mdi-book-open-variant"></i>
                                 <span class="hide-menu">Educação</span>
                             </a>
@@ -78,7 +78,7 @@
                         </li>
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="segurança-index.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="seguranca.html" aria-expanded="false">
                                 <i class="mdi mdi-security-home"></i>
                                 <span class="hide-menu">Segurança</span>
                             </a>
@@ -129,8 +129,25 @@
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb fixed-top menu">
-                <div>
-                    <div>
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-info" 
+                                data-toggle="dropdown" type="button">
+                                    <img src="..\..\assets\images\menu-icon.png" width="20px">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="educacao.html" class="dropdown-item">Educação</a>
+                                    <a href="saude.html" class="dropdown-item">Saúde</a>
+                                    <a href="seguranca.html" class="dropdown-item">Segurança</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10">
                         <a class="nav-link d-inline" href="#quem-somos">Quem Somos</a>
                         <a class="nav-link d-inline" href="#objetivo">Objetivo</a>
                     </div>
@@ -142,10 +159,9 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-            <div id="tela-inicial" class="container-fluid row justify-content-center mt-5">
+            <div id="tela-inicial" class="container-fluid row justify-content-center" style="padding: auto;">
 
-                <img src="..\..\assets\images\LOGO-DA-PLATAFORMA.png"
-                width="623px" height="311px">
+                <img src="..\..\assets\images\LOGO-DA-PLATAFORMA.png">
                 <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
                 <!-- ============================================================== -->	
@@ -153,22 +169,13 @@
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-            <div>
-                <hr>
-                    <br>
-
-                    <br>
-                <hr id="quem-somos">
-                
-            </div>
-
 
 
 
             <!-- ============================================================== -->
             <!-- QUEM SOMOS INICIO -->
             <!-- ============================================================== -->
-            <div class="container-fluid row d-inline text-center">
+            <div id="quem-somos" class="container-fluid row d-inline text-center">
                 <h2 class="azul-royal mb-5 pt-5">QUEM SOMOS</h2>
                 
                 <p class="text-justify mx-5">
