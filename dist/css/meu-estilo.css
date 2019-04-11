@@ -13,6 +13,10 @@ a:hover{
 h4 a:hover{
 	color: black;
 }
+
+.legenda a:hover{
+	color: black;
+}
 /********************************************************************************
 Links - Final
 *********************************************************************************/
@@ -75,6 +79,8 @@ Pagina - Inicio
 	max-height: 311px;
 	width: auto;
 }
+
+.legenda{}
 
 /*/ Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
