@@ -140,13 +140,46 @@
                 </div>
             </div>
 
+            <form>
+                <div class="form-group pt-3" style="width: 1000px">
+                    <label for="select1">Tipo de Crime:</label>
+                    <select class="form-control" id="selectOption">
+                        <option value="1">Homicídio Doloso</option>
+                        <option value="2">Latrocínio</option>
+                        <option value="3">Lesão Corporal Seguida de Morte</option>
+                        <option value="4">Policiais Civis e Militares Mortos em serviço</option>
+                        <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
+                        <option value="6">Morte Decorrente de Intervenção Policial</option>
+                        <option value="7">Mortes Violentas Intencionais - MVI</option>
+                        <option value="8">Mortes Violentas Intencionais - TAXA</option>
+                    </select>                 
+                </div>
+            </form>
+
 
             <!--###########-->
             <!-- GRÁFICO 2 -->
             <!--###########-->
+            <div class="row">
+                <div id="grafico"></div>
 
-            <div class='tableauPlaceholder' id='viz1554747371218' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FQ&#47;FQGW8KW8B&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;FQGW8KW8B' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FQ&#47;FQGW8KW8B&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1554747371218');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='627px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
+                <div>
+                    <div class="btn-group-vertical">
+                      <button type="button" class="btn btn-primary active " id="forma">Forma</button>
+                      <button type="button" class="btn btn-primary " id="barra">Barra</button>
+                      <button type="button" class="btn btn-primary " id="doughnut">Doughnut</button>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="mapa">
+                           Mapa
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li onclick="mapa('mapa-2016')" class="active"><a class="dropdown-item " href="#" id="mapa-2016">2016</a></li>
+                          <li onclick="mapa('mapa-2017')"><a class="dropdown-item " href="#" id="mapa-2017">2017</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
             <!--###########-->
             <!-- GRÁFICO 2 -->
             <!--###########-->
@@ -203,6 +236,8 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
+    <script src="../../dist/js/infografico.js"></script>
+
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>

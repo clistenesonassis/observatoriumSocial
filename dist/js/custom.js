@@ -76,7 +76,7 @@ $(function() {
     // Resize all elements
     // ============================================================== 
     $("body, .page-wrapper").trigger("resize");
-    $(".page-wrapper").delay(20).show();
+    $(".page-wrapper").delay(10000).show();
 
     // ============================================================== 
     // Collapsable cards
