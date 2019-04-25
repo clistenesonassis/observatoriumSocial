@@ -18,10 +18,37 @@ h4 a:hover{
 	color: black;
 }
 
+.ativo_link{
+	color: #fff;
+}
+
+
 /********************************************************************************
 Links - Final
 *********************************************************************************/
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	position: relative;
+}
+
+li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+}
+
+ul li a {
+   display: block;
+   text-decoration: none;
+   padding: 5px;
+}
 
 /********************************************************************************
 Cores - Inicio

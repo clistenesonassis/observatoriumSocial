@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item disable">
-                            <a href="educacao.html" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
+                            <a href="educacao.html" class="sidebar-link " aria-expanded="false">
                                 <i class="mdi mdi-book-open-variant"></i>
                                 <span class="hide-menu">Educação</span>
                             </a>
@@ -136,8 +136,8 @@
                     </div>
 
                     <div class="col-sm-10">
-                        <a class="nav-link d-inline" href="#quem-somos">Quem Somos</a>
-                        <a class="nav-link d-inline" href="#objetivo">Objetivo</a>
+                        <a class="nav-link d-inline" href="#quem-somos" onclick="ativa(this.id)" id="1">Quem Somos</a>
+                        <a class="nav-link d-inline" href="#objetivo" onclick="ativa(this.id)" id="2">Objetivo</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
             <!-- ============================================================== -->
             <!-- QUEM SOMOS INICIO -->
             <!-- ============================================================== -->
-            <div id="quem-somos" class="container-fluid row d-inline text-center">
+            <div id="quem-somos" class="container-fluid row d-inline text-center" onfocus="ativa('1')">
                 <h2 class="azul-royal mb-5 pt-5">QUEM SOMOS</h2>
                 
                 <p class="text-justify mx-5">
@@ -236,6 +236,8 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
+    <script src="../../dist/js/links-index.js"></script>
+
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
