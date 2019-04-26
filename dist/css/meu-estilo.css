@@ -129,7 +129,7 @@ Pagina - Final
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 200px) {
   .menu_cel{
 		display: block;
 	}
