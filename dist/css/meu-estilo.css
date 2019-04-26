@@ -27,28 +27,28 @@ h4 a:hover{
 Links - Final
 *********************************************************************************/
 
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+
+
+/********************************************************************************
+Form - Inicial
+*********************************************************************************/
+
+form{
+	color: black;
+	font-size: 13px;
+	border-color: black;
 }
 
-ul li {
-	position: relative;
+form select{
+	color: black;
+	border-color: black;
 }
 
-li ul {
-	position: absolute;
-	left: 149px;
-	top: 0;
-	display: none;
-}
+/********************************************************************************
+Form - Final
+*********************************************************************************/
 
-ul li a {
-   display: block;
-   text-decoration: none;
-   padding: 5px;
-}
+
 
 /********************************************************************************
 Cores - Inicio
@@ -108,7 +108,14 @@ Pagina - Inicio
 	width: auto;
 }
 
-.legenda{}
+/********************************************************************************
+Pagina - Final
+*********************************************************************************/
+
+
+/********************************************************************************
+@MEDIA - Inicial
+*********************************************************************************/
 
 /*/ Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -117,9 +124,23 @@ Pagina - Inicio
 
 /*/ Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.menu_cel{
+		display: none;
+	}
+}
 
+@media screen and (min-width: 480px) {
+  .menu_cel{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 767.98px) {
+  .menu_cel{
+		display: none;
+	}
 }
 
 /********************************************************************************
-Pagina - Final
+@MEDIA - Final
 *********************************************************************************/

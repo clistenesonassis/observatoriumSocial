@@ -90,14 +90,6 @@
                                 </li>
                             </lu>
                         </li>
-                        <!-- ÍCONES
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="icon-material.html" aria-expanded="false">
-                                <i class="mdi mdi-face"></i>
-                                <span class="hide-menu">Icon</span>
-                            </a>
-                        </li>
-                        -->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -128,31 +120,20 @@
                 </div>
             </div>
 
-            <form>
-                <div class="form-group pt-3" style="width: 1000px">
-                    <label for="select1">Tipo de Crime:</label>
-                    <select class="form-control" id="selectOption">
-                        <option value="1">Homicídio Doloso</option>
-                        <option value="2">Latrocínio</option>
-                        <option value="3">Lesão Corporal Seguida de Morte</option>
-                        <option value="4">Policiais Civis e Militares Mortos em serviço</option>
-                        <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
-                        <option value="6">Morte Decorrente de Intervenção Policial</option>
-                        <option value="7">Mortes Violentas Intencionais - MVI</option>
-                    </select>                 
-                </div>
-            </form>
 
-
-            <!--###########-->
-            <!-- GRÁFICO 2 -->
-            <!--###########-->
+            <!--#########-->
+            <!-- GRÁFICO -->
+            <!--#########-->
             <div class="row">
 
-                <div style="width: 1000px;">
+                <div style="width: 1010px;" align="right">
                     <div id="grafico"></div>
                 </div>
 
+
+                <!--################-->
+                <!-- OPÇÕES DE MAPA -->
+                <!--################-->
                 <div>
                     <div class="btn-group-vertical">
                       <button type="button" class="btn btn-outline-primary active " id="forma" value="1">Forma</button>
@@ -169,26 +150,39 @@
                         </ul>
                       </div>
                     </div>
+                    <!--################-->
+                    <!-- OPÇÕES DE MAPA -->
+                    <!--################-->
                 </div>
             </div>
+            <!--#########-->
+            <!-- GRÁFICO -->
+            <!--#########-->
+
+
             <!--###########-->
-            <!-- GRÁFICO 2 -->
+            <!--  FILTROS  -->
             <!--###########-->
-
-
-
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div class="container-fluid">
+            <form style="float: right; position: absolute; top: 170px; left: 838px;">
                 
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
+                <div class="form-group pt-3">
+                    Tipo de Crime:
+                    <select class="form-control" id="selectOption" style="width: 150px; height: 25px;">
+                        <option value="1">Homicídio Doloso</option>
+                        <option value="2">Latrocínio</option>
+                        <option value="3">Lesão Corporal Seguida de Morte</option>
+                        <option value="4">Policiais Civis e Militares Mortos em serviço</option>
+                        <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
+                        <option value="6">Morte Decorrente de Intervenção Policial</option>
+                        <option value="7">Mortes Violentas Intencionais - MVI</option>
+                    </select>                 
+                </div>
+
+            </form>
+            <!--###########-->
+            <!--  FILTROS  -->
+            <!--###########-->
+
             
 
             <!-- ============================================================== -->
@@ -227,7 +221,7 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
-    <script src="../../dist/js/infografico.js"></script>
+    <script src="../../dist/js/infografico_seguranca.js"></script>
 
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
