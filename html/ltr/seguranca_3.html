@@ -61,46 +61,50 @@
                                 <span class="hide-menu">Início</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="educacao.html" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
+                        <li class="sidebar-item disable">
+                            <a href="educacao.html" class="sidebar-link " aria-expanded="false">
                                 <i class="mdi mdi-book-open-variant"></i>
                                 <span class="hide-menu">Educação</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="saude.html" aria-expanded="false">
+                        <li class="sidebar-item disable">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="seguranca-index.html" aria-expanded="false">
                                 <i class="mdi mdi-hospital"></i>
                                 <span class="hide-menu">Saúde</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="seguranca.html" aria-expanded="false">
+                        <li class="sidebar-item disable">
+                            <a class="sidebar-link" href="#" aria-expanded="false">
                                 <i class="mdi mdi-security-home"></i>
                                 <span class="hide-menu">Segurança</span>
                             </a>
-                            <!--
+                    
                             <lu id="sidebarnav">
                                 <li class="sidebar-item">
-                                    <a href="seguranca-grupo-de-qualidade-da-informacao.html" class="sidebar-link waves-effect waves-dark sidebar-link">
-                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-check-circle-outline"></i>
-                                        <span class="hide-menu">Qualidade da Informação</span>
+                                    <a href="seguranca_2.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-crosshairs-gps"></i>
+                                        <span class="hide-menu">MODELO 1</span>
                                     </a>
                                 </li>
+                            </lu>
+                            <lu id="sidebarnav">
                                 <li class="sidebar-item">
-                                    <a href="seguranca-comparacao-por-categoria.html" class="sidebar-link waves-effect waves-dark sidebar-link">
-                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-scale-balance"></i>
-                                        <span class="hide-menu">Balanço Geral</span>
+                                    <a href="seguranca_3.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-crosshairs-gps"></i>
+                                        <span class="hide-menu">MODELO 2</span>
                                     </a>
                                 </li>
+                            </lu>
+                            <lu id="sidebarnav">
                                 <li class="sidebar-item">
-                                    <a href="seguranca-t2-estatisticas-criminais.html" class="sidebar-link waves-effect waves-dark sidebar-link">
-                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-poll"></i>
-                                        <span class="hide-menu">Estatísticas Criminais</span>
+                                    <a href="seguranca_4.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-crosshairs-gps"></i>
+                                        <span class="hide-menu">MODELO 3</span>
                                     </a>
                                 </li>
-                            </lu> -->
+                            </lu>
                         </li>
                         <!-- ÍCONES
                         <li class="sidebar-item">
@@ -141,37 +145,77 @@
             </div>
 
 
-
             <!--###########-->
-            <!-- GRÁFICO 3 -->
+            <!--  FILTROS  -->
             <!--###########-->
-
-            <div class='tableauPlaceholder' id='viz1554747420047' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LinhadoTempoporcategorias&#47;Histria1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='LinhadoTempoporcategorias&#47;Histria1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LinhadoTempoporcategorias&#47;Histria1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1554747420047');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='627px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-            <!--###########-->
-            <!-- GRÁFICO 3 -->
-            <!--###########-->
-
-
-
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div class="container-fluid">
+            <div id="filtro" class="row" style="width: 90%;" align="center">
                 
+                <div class="col-sm-6">
+                    <form>
+                
+                        <div class="form-group pt-3">
+                            <div style="width: 90%;" align="left">
+                                Tipo de Crime:
+                            </div>
+                            
+                            <select id="selectOption">
+                                <option value="1">Homicídio Doloso</option>
+                                <option value="2">Latrocínio</option>
+                                <option value="3">Lesão Corporal Seguida de Morte</option>
+                                <option value="4">Policiais Civis e Militares Mortos em serviço</option>
+                                <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
+                                <option value="6">Morte Decorrente de Intervenção Policial</option>
+                                <option value="7">Mortes Violentas Intencionais - MVI</option>
+                            </select>                 
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-sm-6">
+                    <form>
+                
+                        <div class="form-group pt-3">
+                            <div style="width: 90%;" align="left">
+                                Tipo de infográfico:
+                            </div>
+                            
+                            <select id="selectOption">
+                                <option value="1">Forma</option>
+                                <option value="2">Barra</option>
+                                <option value="3">Doughnut</option>
+                                <option value="4">Linha do Tempo</option>
+                                <option value="5">Mapa 2016</option>
+                                <option value="6">Mapa 2017</option>
+                            </select>                 
+                        </div>
+
+                    </form>
+                </div>
+
+
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
+            <!--###########-->
+            <!--  FILTROS  -->
+            <!--###########-->
+
+
+            <!--#########-->
+            <!-- GRÁFICO -->
+            <!--#########-->
+            <div class="row">
+
+                <div style="width: 90%;" align="right">
+                    <div id="grafico"></div>
+                </div>
+
+
             
 
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center rodape">
+            <footer class="footer text-center rodape" style="width: 100%;">
                 <img src="..\..\assets\images\ufpb-logo.png" height="84px" width="59px">
                 <img src="..\..\assets\images\ci-logo.png">
             </footer>
@@ -204,6 +248,8 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
+    <script src="../../dist/js/infografico_seguranca.js"></script>
+
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>

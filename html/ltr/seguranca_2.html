@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item disable">
-                            <a href="educacao.html" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false">
+                            <a href="educacao.html" class="sidebar-link " aria-expanded="false">
                                 <i class="mdi mdi-book-open-variant"></i>
                                 <span class="hide-menu">Educação</span>
                             </a>
@@ -85,11 +85,35 @@
                                 <li class="sidebar-item">
                                     <a href="seguranca_2.html" class="sidebar-link waves-effect waves-dark sidebar-link">
                                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-crosshairs-gps"></i>
-                                        <span class="hide-menu">Crimes</span>
+                                        <span class="hide-menu">MODELO 1</span>
+                                    </a>
+                                </li>
+                            </lu>
+                            <lu id="sidebarnav">
+                                <li class="sidebar-item">
+                                    <a href="seguranca_3.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-crosshairs-gps"></i>
+                                        <span class="hide-menu">MODELO 2</span>
+                                    </a>
+                                </li>
+                            </lu>
+                            <lu id="sidebarnav">
+                                <li class="sidebar-item">
+                                    <a href="seguranca_4.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-crosshairs-gps"></i>
+                                        <span class="hide-menu">MODELO 3</span>
                                     </a>
                                 </li>
                             </lu>
                         </li>
+                        <!-- ÍCONES
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="icon-material.html" aria-expanded="false">
+                                <i class="mdi mdi-face"></i>
+                                <span class="hide-menu">Icon</span>
+                            </a>
+                        </li>
+                        -->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -121,12 +145,43 @@
             </div>
 
 
+            <!--###########-->
+            <!--  FILTROS  -->
+            <!--###########-->
+            <div id="filtro">
+                
+                <form>
+                
+                    <div class="form-group pt-3">
+                        <div>
+                            Tipo de Crime:
+                        </div>
+                        
+                        <select id="selectOption">
+                            <option value="1">Homicídio Doloso</option>
+                            <option value="2">Latrocínio</option>
+                            <option value="3">Lesão Corporal Seguida de Morte</option>
+                            <option value="4">Policiais Civis e Militares Mortos em serviço</option>
+                            <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
+                            <option value="6">Morte Decorrente de Intervenção Policial</option>
+                            <option value="7">Mortes Violentas Intencionais - MVI</option>
+                        </select>                 
+                    </div>
+
+                </form>
+
+            </div>
+            <!--###########-->
+            <!--  FILTROS  -->
+            <!--###########-->
+
+
             <!--#########-->
             <!-- GRÁFICO -->
             <!--#########-->
             <div class="row">
 
-                <div style="width: 1010px;" align="right">
+                <div style="width: 90%;" align="right">
                     <div id="grafico"></div>
                 </div>
 
@@ -158,33 +213,6 @@
             <!--#########-->
             <!-- GRÁFICO -->
             <!--#########-->
-
-
-            <!--###########-->
-            <!--  FILTROS  -->
-            <!--###########-->
-            <form style="float: right; position: absolute; top: 170px; left: 838px;">
-                
-                <div class="form-group pt-3">
-                    <div>
-                        Tipo de Crime:
-                    </div>
-                    
-                    <select id="selectOption">
-                        <option value="1">Homicídio Doloso</option>
-                        <option value="2">Latrocínio</option>
-                        <option value="3">Lesão Corporal Seguida de Morte</option>
-                        <option value="4">Policiais Civis e Militares Mortos em serviço</option>
-                        <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
-                        <option value="6">Morte Decorrente de Intervenção Policial</option>
-                        <option value="7">Mortes Violentas Intencionais - MVI</option>
-                    </select>                 
-                </div>
-
-            </form>
-            <!--###########-->
-            <!--  FILTROS  -->
-            <!--###########-->
 
             
 
