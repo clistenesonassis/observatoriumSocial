@@ -16,15 +16,13 @@
     <!-- Custom CSS -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
 
-    <link href="../../dist/css/meu-estilo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/meu-estilo.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    
-
 </head>
 
 <body>
@@ -72,7 +70,7 @@
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link" aria-expanded="false" id="educação" data-toggle="collapse" data-target="#educacao-itens">
+                            <a class="sidebar-link active" aria-expanded="false" id="educação" data-toggle="collapse" data-target="#educacao-itens">
                                 <i class="mdi mdi-book-open-variant"></i>
                                 <span class="hide-menu">Educação</span>
                             </a>
@@ -242,92 +240,104 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper" style="background-color: #fff;">
+        <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            <div class="page-breadcrumb fixed-top menu">
-                
+            <div class="page-breadcrumb menu">
                 <div>
-                    <div style="float: left;">
-                        <div>
-                            <div class="dropdown menu_cel">
-                                <button class="btn btn-outline-info" 
-                                data-toggle="dropdown" type="button">
-                                    <img src="..\..\assets\images\menu-icon.png" width="20px">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a href="educacao.html" class="dropdown-item">Educação</a>
-                                    <a href="saude.html" class="dropdown-item">Saúde</a>
-                                    <a href="seguranca_2.html" class="dropdown-item">Segurança</a>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Início</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Segurança
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!--###########-->
+            <!--  FILTROS  -->
+            <!--###########-->
+            <div class="row" align="center" style="margin: 0px auto;">
+                <div id="filtro" class="row" style="width: 100%;" align="center">
+                
+                    <div class="col-sm-6">
+                        <form>
+                    
+                            <div class="form-group pt-3">
+                                <div style="width: 90%;" align="left">
+                                    Informação:
                                 </div>
+                                
+                                <select id="selectOption-medio">
+                                    <option value="1">Matricula dos Anos Finais</option>
+                                    <option value="2">Total de Estudantes Incluídos</option>
+                                    <option value="3">Taxa de Aprovação</option>
+                                    <option value="4">Taxa de Abandono</option>
+                                    <option value="5">Média de Matriculas por turma</option>
+                                    <option value="6">Matrículas em Tempo Integral</option>
+                                    <option value="7">Taxa de Reprovação</option>
+                                    <option value="8">Taxa de Distorção Série-Idade</option>
+                                </select>                 
                             </div>
-                        </div>
+
+                        </form>
                     </div>
 
-                    <div style="float: right;">
-                        <a class="nav-link d-inline" href="#quem-somos" id="1">Quem Somos</a>
-                        <a class="nav-link d-inline" href="#objetivo" id="2">Objetivo</a>
+                    <div class="col-sm-6">
+                        <form>
+                    
+                            <div class="form-group pt-3">
+                                <div style="width: 90%;" align="left">
+                                    Tipo de infográfico:
+                                </div>
+                                
+                                <select id="tipoGrafico-medio">
+                                    <option value="forma">Forma</option>
+                                    <option value="barra">Barra</option>
+                                </select>                 
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div id="tela-inicial" class="container-fluid row justify-content-center" style="padding: auto;">
+            <!--###########-->
+            <!--  FILTROS  -->
+            <!--###########-->
 
-                <img src="..\..\assets\images\LOGO-DA-PLATAFORMA.png" style="width: 100%; height: 100%;">
-                <!-- ============================================================== -->
-                <!-- Recent comment and chats -->
-                <!-- ============================================================== -->	
+
+            <!--#########-->
+            <!-- GRÁFICO -->
+            <!--#########-->
+            <div class="row">
+
+                <div style="width: 100%;" align="left">
+                    <div id="grafico">
+                        <div class='tableauPlaceholder' id='viz1559195399770' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ed&#47;Educao-EM-MATRICULASDOENSINOMEDIO&#47;Painel1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Educao-EM-MATRICULASDOENSINOMEDIO&#47;Painel1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ed&#47;Educao-EM-MATRICULASDOENSINOMEDIO&#47;Painel1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1559195399770');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
+                </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
+            <!--#########-->
+            <!-- GRÁFICO -->
+            <!--#########-->
 
 
-            <!-- ============================================================== -->
-            <!-- QUEM SOMOS INICIO -->
-            <!-- ============================================================== -->
-            <div id="quem-somos" class="container-fluid row d-inline text-center" onfocus="ativa('1')">
-                <h2 class="azul-royal mb-5 pt-5">QUEM SOMOS</h2>
-                
-                <p class="text-justify mx-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tortor semper lorem egestas tristique sit amet in lacus. Mauris accumsan ex tellus, vel vehicula nisl sagittis at. Aenean finibus lectus neque, et tincidunt turpis imperdiet quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ut arcu rutrum, iaculis sem in, venenatis purus. Suspendisse ac orci eget risus eleifend venenatis nec eu turpis. Maecenas sodales tortor massa, non viverra diam iaculis eget. Pellentesque bibendum metus at ultrices hendrerit. Nulla vulputate eget libero eu consectetur. In quis justo et ante aliquet lacinia. Etiam aliquam sem lorem, ut elementum arcu hendrerit in. Sed eu justo ac ipsum pulvinar sodales vel nec dolor. Nulla a nulla augue. Vestibulum feugiat, eros ac eleifend tincidunt, nisl dui dapibus magna, et sollicitudin turpis metus ac nisi. Nullam augue justo, congue sit amet lectus id, tempus ornare odio. Praesent ut tincidunt erat.
-                    <br>
-                    <br>
-                    Pellentesque vestibulum sagittis urna vel aliquet. Suspendisse potenti. Phasellus pretium nec lacus at tincidunt. Sed bibendum commodo odio vitae vehicula. Morbi non tellus ut nibh hendrerit sodales. Maecenas sit amet nibh diam. Suspendisse imperdiet magna leo, vitae porta nisi finibus eget. Vivamus at facilisis orci. Sed in leo a ipsum aliquam varius. Duis et risus nec lacus tempor eleifend a a lacus. Morbi eu metus vel nibh semper dictum sit amet id tellus.
-                    <br>
-                    <br>
-                    Morbi egestas ac nulla in vestibulum. Nulla vestibulum turpis ac enim varius, quis scelerisque purus accumsan. Integer et blandit turpis, sit amet dictum magna. Proin dignissim lectus sed massa dignissim, ut fermentum est mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam volutpat venenatis aliquam. In arcu justo, suscipit eu est vitae, elementum interdum nunc. Praesent congue varius nisi. Vivamus laoreet pretium elementum. Integer commodo tincidunt odio, vel lacinia sapien euismod sed.
-                    <br>
-                    <br>
-                    Proin in tincidunt tellus. Fusce consequat nibh mauris, et facilisis lacus pharetra ut. Duis eget lorem sed diam volutpat interdum a ac purus. Donec auctor quam et mauris volutpat porta. Curabitur commodo faucibus tortor in placerat. Pellentesque hendrerit nisl vel mattis ullamcorper. Etiam nec rutrum tortor. Mauris imperdiet vitae ante non vestibulum. Duis a felis aliquam, mollis leo id, condimentum leo. Suspendisse sagittis, lectus nec vestibulum fringilla, massa nibh pellentesque velit, ut luctus nisl ligula ac ligula. Maecenas egestas odio eget mi vestibulum porta. Integer mollis interdum nisl lacinia gravida. Morbi venenatis nisl nec metus vestibulum porta facilisis at purus. Donec ut viverra leo.
-                </p>
+            <!--#########-->
+            <!-- LEGENDA -->
+            <!--#########-->
+            <div style="margin: 20px 0px; padding: 10px 40px; background: #FFF; color: black;" align="center">
+                <label class="font-weight-bold mr-2">Legenda:</label><label id="legenda">
+                    Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.
+                </label>
             </div>
-            <!-- ============================================================== -->
-            <!-- QUEM SOMOS FINAL -->
-            <!-- ============================================================== -->
-
-
-            <!-- ============================================================== -->
-            <!-- OBJETIVO INICIO -->
-            <!-- ============================================================== -->
-            <div id="objetivo" class="container-fluid row d-inline text-center border rounded">
-                <h2 class="azul-royal mb-5 pt-5">Objetivo</h2>
-                <p class="text-justify mx-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tortor semper lorem egestas tristique sit amet in lacus. Mauris accumsan ex tellus, vel vehicula nisl sagittis at. Aenean finibus lectus neque, et tincidunt turpis imperdiet quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ut arcu rutrum, iaculis sem in, venenatis purus. Suspendisse ac orci eget risus eleifend venenatis nec eu turpis. Maecenas sodales tortor massa, non viverra diam iaculis eget. Pellentesque bibendum metus at ultrices hendrerit. Nulla vulputate eget libero eu consectetur. In quis justo et ante aliquet lacinia. Etiam aliquam sem lorem, ut elementum arcu hendrerit in. Sed eu justo ac ipsum pulvinar sodales vel nec dolor. Nulla a nulla augue. Vestibulum feugiat, eros ac eleifend tincidunt, nisl dui dapibus magna, et sollicitudin turpis metus ac nisi. Nullam augue justo, congue sit amet lectus id, tempus ornare odio. Praesent ut tincidunt erat.
-                    <br>
-                    <br>
-                    Pellentesque vestibulum sagittis urna vel aliquet. Suspendisse potenti. Phasellus pretium nec lacus at tincidunt. Sed bibendum commodo odio vitae vehicula. Morbi non tellus ut nibh hendrerit sodales. Maecenas sit amet nibh diam. Suspendisse imperdiet magna leo, vitae porta nisi finibus eget. Vivamus at facilisis orci. Sed in leo a ipsum aliquam varius. Duis et risus nec lacus tempor eleifend a a lacus. Morbi eu metus vel nibh semper dictum sit amet id tellus.
-                </p>
-            </div>
-            <!-- ============================================================== -->
-            <!-- OBJETIVO FINAL -->
-            <!-- ============================================================== -->
+            <!--#########-->
+            <!-- LEGENDA -->
+            <!--#########-->
 
 
             <!-- ============================================================== -->
@@ -340,6 +350,8 @@
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
+
+            
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
@@ -364,9 +376,7 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
-    <script src="../../dist/js/links-index.js"></script>
-    <!--This page JavaScript -->
-    <script src="../../dist/js/menu_index.js"></script>
+    <script src="../../dist/js/infografico_educacao.js"></script>
 
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
