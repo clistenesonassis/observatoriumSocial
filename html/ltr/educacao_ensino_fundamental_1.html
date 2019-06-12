@@ -263,17 +263,17 @@
             <!--  FILTROS  -->
             <!--###########-->
             <div>
-                <div id="filtro" style="width: 165px; position: absolute; z-index: 1; top: 305px; right: -2px;">
+                <div id="filtro">
                 
                     <div>
                         <form>
                     
                             <div class="form-group">
-                                <div style="font-size: 12px; color: black;">
-                                    Informação:
+                                <div>
+                                    Menu:
                                 </div>
                                 
-                                <select id="selectOption" style="height: 23px;">
+                                <select id="selectOption" style="height: 20px;">
                                     <option value="1">Matricula dos Anos Iniciais</option>
                                     <option value="2">Total de Estudantes Incluídos</option>
                                     <option value="3">Taxa de Aprovação</option>
@@ -292,11 +292,11 @@
                         <form>
                     
                             <div class="form-group">
-                                <div style="font-size: 12px; color: black;">
+                                <div>
                                     Tipo de infográfico:
                                 </div>
                                 
-                                <select id="tipoGrafico" style="height: 23px;">
+                                <select id="tipoGrafico" style="height: 20px;">
                                     <option value="forma">Forma</option>
                                     <option value="barra">Barra</option>
                                 </select>                 
@@ -313,6 +313,19 @@
             <div style="clear: both;"></div>
 
             <!--#########-->
+            <!-- LEGENDA -->
+            <!--#########-->
+            <div style="margin: 20px 0px; padding: 10px 20px 0 0; background: #FFF; color: black;" align="center">
+                <label id="legenda">
+                    Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.
+                </label>
+            </div>
+            <!--#########-->
+            <!-- LEGENDA -->
+            <!--#########-->
+
+
+            <!--#########-->
             <!-- GRÁFICO -->
             <!--#########-->
             <div>
@@ -327,18 +340,6 @@
             <!-- GRÁFICO -->
             <!--#########-->
 
-
-            <!--#########-->
-            <!-- LEGENDA -->
-            <!--#########-->
-            <div style="margin: 20px 0px; padding: 0px 40px; background: #FFF; color: black;" align="center">
-                <label class="font-weight-bold mr-2">Legenda:</label><label id="legenda">
-                    Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.
-                </label>
-            </div>
-            <!--#########-->
-            <!-- LEGENDA -->
-            <!--#########-->
 
 
             <!-- ============================================================== -->

@@ -70,8 +70,8 @@ Pagina - Inicio
 }
 
 #tela-inicial{
-	padding-top: 80px;
-	margin-bottom: 40px;
+	padding-top: 100px;
+	margin-bottom: 140px;
 }
 
 .rodape{
@@ -103,6 +103,21 @@ Pagina - Inicio
 
 .invisible{
 	display: none;
+}
+
+#filtro{
+	font-size: 12px;
+	font-family: Tahoma;
+	color: #282828;
+	width: 165px;
+	position: absolute;
+	z-index: 1;
+	top: 135px;
+	right: -2px;
+}
+
+select {
+	color: #282828;	
 }
 
 /********************************************************************************
