@@ -145,7 +145,7 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1" && tipo_de_grafico != "rosca") {
-			$('#legenda').html("Total de Homicídio registrado por cada estado no Brasil.");
+			$('#legenda').html("Total de Homicídio(em milhares) registrado por cada estado no Brasil.");
 		}
 		else if (option == "2" && tipo_de_grafico != "rosca") {
 			$('#legenda').html("Total de Latrocínio registrado por cada estado no Brasil.");
@@ -323,7 +323,7 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de Homicídio registrado por cada estado no Brasil.");
+			$('#legenda').html("Total de Homicídio(em milhares) registrado por cada estado no Brasil.");
 		}
 		else if (option == "2") {
 			$('#legenda').html("Total de Latrocínio registrado por cada estado no Brasil.");
