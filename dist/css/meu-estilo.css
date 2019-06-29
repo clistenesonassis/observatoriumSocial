@@ -37,6 +37,15 @@ select{
 	height: 20px;
 }
 
+#selectOption{
+	/*-webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+   	-moz-appearance: none; /* Remove estilo padrão do FireFox */
+   	/*appearance: none; /* Remove estilo padrão do FireFox*/
+   	/*background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+   	background-position: 218px center;  /*Posição da imagem do background*/
+   	/*border:1px solid #ddd;*/
+}
+
 /********************************************************************************
 Form - Final
 *********************************************************************************/
@@ -125,6 +134,7 @@ Pagina - Inicio
 	z-index: 1;
 	top: 10px;
 	right: -14px;
+
 }
 
 select {
