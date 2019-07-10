@@ -60,10 +60,10 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
+			$('#legenda').html("Total de estudantes (em milhares) matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
 		}
 		else if (option == "2") {
-			$('#legenda').html("Total de estudantes com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
+			$('#legenda').html("Total de estudantes (em milhares) com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
 		}
 		else if (option == "3") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, ao final do ano letivo, concluíram, com sucesso, o ano/série.");
@@ -72,10 +72,10 @@ $(function(){
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, deixa de frequentar a escola durante o ano letivo.");
 		}
 		else if (option == "5") {
-			$('#legenda').html("Tamanho médio das turmas.");
+			$('#legenda').html("Percentual do Tamanho médio das turmas.");
 		}
 		else if (option == "6") {
-			$('#legenda').html("Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
+			$('#legenda').html("Total (em milhares) de Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
 		}
 		else if (option == "7") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, ao final do ano letivo, não apresentam os requisitos mínimos, de aproveitamento e frequência para serem promovidos ao ano/série posterior.");
@@ -148,10 +148,10 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
+			$('#legenda').html("Total de estudantes (em milhares) matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
 		}
 		else if (option == "2") {
-			$('#legenda').html("Total de estudantes com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
+			$('#legenda').html("Total de estudantes (em milhares) com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
 		}
 		else if (option == "3") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, ao final do ano letivo, concluíram, com sucesso, o ano/série.");
@@ -160,10 +160,10 @@ $(function(){
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, deixa de frequentar a escola durante o ano letivo.");
 		}
 		else if (option == "5") {
-			$('#legenda').html("Tamanho médio das turmas.");
+			$('#legenda').html("Percentual do Tamanho médio das turmas.");
 		}
 		else if (option == "6") {
-			$('#legenda').html("Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
+			$('#legenda').html("Total (em milhares) de Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
 		}
 		else if (option == "7") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, ao final do ano letivo, não apresentam os requisitos mínimos, de aproveitamento e frequência para serem promovidos ao ano/série posterior.");
@@ -245,10 +245,10 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
+			$('#legenda').html("Total de estudantes (em milhares) matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
 		}
 		else if (option == "2") {
-			$('#legenda').html("Total de estudantes com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
+			$('#legenda').html("Total de estudantes (em milhares) com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
 		}
 		else if (option == "3") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, ao final do ano letivo, concluíram, com sucesso, o ano/série.");
@@ -257,10 +257,10 @@ $(function(){
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, deixa de frequentar a escola durante o ano letivo.");
 		}
 		else if (option == "5") {
-			$('#legenda').html("Tamanho médio das turmas.");
+			$('#legenda').html("Percentual do Tamanho médio das turmas.");
 		}
 		else if (option == "6") {
-			$('#legenda').html("Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
+			$('#legenda').html("Total (em milhares) de Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
 		}
 		else if (option == "7") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, ao final do ano letivo, não apresentam os requisitos mínimos, de aproveitamento e frequência para serem promovidos ao ano/série posterior.");
@@ -333,10 +333,10 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
+			$('#legenda').html("Total de estudantes (em milhares) matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
 		}
 		else if (option == "2") {
-			$('#legenda').html("Total de estudantes com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
+			$('#legenda').html("Total de estudantes (em milhares) com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
 		}
 		else if (option == "3") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, ao final do ano letivo, concluíram, com sucesso, o ano/série.");
@@ -345,10 +345,10 @@ $(function(){
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, deixa de frequentar a escola durante o ano letivo.");
 		}
 		else if (option == "5") {
-			$('#legenda').html("Tamanho médio das turmas.");
+			$('#legenda').html("Percentual do Tamanho médio das turmas.");
 		}
 		else if (option == "6") {
-			$('#legenda').html("Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
+			$('#legenda').html("Total (em milhares) de Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
 		}
 		else if (option == "7") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, ao final do ano letivo, não apresentam os requisitos mínimos, de aproveitamento e frequência para serem promovidos ao ano/série posterior.");
@@ -430,10 +430,10 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
+			$('#legenda').html("Total de estudantes (em milhares) matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
 		}
 		else if (option == "2") {
-			$('#legenda').html("Total de estudantes com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
+			$('#legenda').html("Total de estudantes (em milhares) com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
 		}
 		else if (option == "3") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, ao final do ano letivo, concluíram, com sucesso, o ano/série.");
@@ -442,10 +442,10 @@ $(function(){
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, deixa de frequentar a escola durante o ano letivo.");
 		}
 		else if (option == "5") {
-			$('#legenda').html("Tamanho médio das turmas.");
+			$('#legenda').html("Percentual do Tamanho médio das turmas.");
 		}
 		else if (option == "6") {
-			$('#legenda').html("Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
+			$('#legenda').html("Total (em milhares) de Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
 		}
 		else if (option == "7") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, ao final do ano letivo, não apresentam os requisitos mínimos, de aproveitamento e frequência para serem promovidos ao ano/série posterior.");
@@ -517,10 +517,10 @@ $(function(){
 
 		//LEGENDA//
 		if (option == "1") {
-			$('#legenda').html("Total de estudantes matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
+			$('#legenda').html("Total de estudantes (em milhares) matriculados em turmas regulares nos anos iniciais, finais e médio. Não inclui turmas unificadas, multietapa, multisseriadas ou de correção de fluxo.");
 		}
 		else if (option == "2") {
-			$('#legenda').html("Total de estudantes com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
+			$('#legenda').html("Total de estudantes (em milhares) com deficiência, transtorno geral do desenvolvimento ou altas habilidades e superdotação que estão em turmas regulares.");
 		}
 		else if (option == "3") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, ao final do ano letivo, concluíram, com sucesso, o ano/série.");
@@ -529,10 +529,10 @@ $(function(){
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, deixa de frequentar a escola durante o ano letivo.");
 		}
 		else if (option == "5") {
-			$('#legenda').html("Tamanho médio das turmas.");
+			$('#legenda').html("Percentual do Tamanho médio das turmas.");
 		}
 		else if (option == "6") {
-			$('#legenda').html("Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
+			$('#legenda').html("Total (em milhares) de Matrículas com escolarização igual ou superior a 7 horas diárias, considerando o tempo total de escolarização e as atividades complementares.");
 		}
 		else if (option == "7") {
 			$('#legenda').html("Percentual de estudantes da matrícula total que, num dado ano/série, ao final do ano letivo, não apresentam os requisitos mínimos, de aproveitamento e frequência para serem promovidos ao ano/série posterior.");
