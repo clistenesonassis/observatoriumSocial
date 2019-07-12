@@ -161,7 +161,7 @@
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link active" aria-expanded="false" data-toggle="collapse" data-target="#saude-itens">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false" data-toggle="collapse" data-target="#saude-itens">
                                 <i class="mdi mdi-hospital"></i>
                                 <span class="hide-menu">Saúde</span>
                             </a>
@@ -186,6 +186,44 @@
                                     </ul>
                                 </nav>
                                 <!-- ITEM 1 DO ELEMENTO PRINCIPAL -->
+
+
+                                <!-- ITEM 2 DO ELEMENTO PRINCIPAL -->
+                                <nav class="sidebar-nav">
+                                    <ul id="sidebarnav">
+                                        <li class="sidebar-item">
+                                            <lu id="sidebarnav">
+                                                <li class="sidebar-item">
+                                                    <a href="saude_habits.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-adjust"></i>
+                                                        <span class="hide-menu">Hábitos</span>
+                                                    </a>
+                                                </li>
+                                            </lu>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- ITEM 2 DO ELEMENTO PRINCIPAL -->
+
+
+                                <!-- ITEM 3 DO ELEMENTO PRINCIPAL -->
+                                <!--
+                                <nav class="sidebar-nav">
+                                    <ul id="sidebarnav">
+                                        <li class="sidebar-item">
+                                            <lu id="sidebarnav">
+                                                <li class="sidebar-item">
+                                                    <a href="" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-format-paragraph"></i>
+                                                        <span class="hide-menu">Percepção da Saúde</span>
+                                                    </a>
+                                                </li>
+                                            </lu>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                -->
+                                <!-- ITEM 3 DO ELEMENTO PRINCIPAL -->
 
                             </div>
                             <!-- ITENS DO ELEMENTO PRINCIPAL -->
@@ -231,12 +269,11 @@
                         <!-- PARTE DE SEGURANÇA -->
 
 
-
                         <!-- PARTE DE INFRAESTRUTURA -->
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link" aria-expanded="false" data-toggle="collapse" data-target="#infraestrutura-itens">
+                            <a class="sidebar-link active" aria-expanded="false" data-toggle="collapse" data-target="#infraestrutura-itens">
                                 <i class="mdi mdi-nfc-variant"></i>
                                 <span class="hide-menu">Infraestrutura</span>
                             </a>
@@ -251,7 +288,7 @@
                                         <li class="sidebar-item">
                                             <lu id="sidebarnav">
                                                 <li class="sidebar-item">
-                                                    <a href="educacao_agua.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                                    <a href="infraestrutura_agua.html" class="sidebar-link waves-effect waves-dark sidebar-link">
                                                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-water"></i>
                                                         <span class="hide-menu">Água nas Escolas</span>
                                                     </a>
@@ -261,6 +298,23 @@
                                     </ul>
                                 </nav>
                                 <!-- ITEM 1 DO ELEMENTO PRINCIPAL -->
+
+                                <!-- ITEM 2 DO ELEMENTO PRINCIPAL -->
+                                <nav class="sidebar-nav">
+                                    <ul id="sidebarnav">
+                                        <li class="sidebar-item">
+                                            <lu id="sidebarnav">
+                                                <li class="sidebar-item">
+                                                    <a href="infraestrutura_tecnologia.html" class="sidebar-link waves-effect waves-dark sidebar-link">
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="mdi mdi-monitor"></i>
+                                                        <span class="hide-menu">Tecnologia nas Escolas</span>
+                                                    </a>
+                                                </li>
+                                            </lu>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- ITEM 2 DO ELEMENTO PRINCIPAL -->
 
                             </div>
                             <!-- ITENS DO ELEMENTO PRINCIPAL -->
@@ -303,7 +357,7 @@
             <!--#########-->
             <div style="margin: 20px 0px; padding: 10px 20px 0 0; background: #FFF; color: black;" align="center">
                 <label id="legenda">
-                    Total de pessoas de 18 anos ou mais de idade que referem diagnóstico de doença crônica, com indicação do intervalo de confiança de 95%, segundo as Unidades da Federação - 2013
+                    Porcentagem de escolas que possuem água filtrada por estado
                 </label>
             </div>
             <!--#########-->
@@ -326,14 +380,14 @@
                                 </div>
                                 
                                 <select id="selectOption">
-                                    <option value="1">Doenças Por Estado</option>
-                                    <option value="2">Doenças Por Região</option>
-                                    <option value="3">Doenças Por Estado Baseado no Sexo</option>
-                                    <option value="4">Doenças Por Região Baseado no Sexo</option>
-                                    <option value="5">Doenças Por Estado Baseado na Idade</option>
-                                    <option value="6">Doenças Por Região Baseado na Idade</option>
-                                    <option value="7">Doenças Por Estado Baseado na Raça</option>
-                                    <option value="8">Doenças Por Região Baseado na Raça</option>
+                                    <option value="1">Água Filtrada</option>
+                                    <option value="2">Água Filtrada por Região</option>
+                                    <option value="3">Água de Cacimba</option>
+                                    <option value="4">Água de Rios</option>
+                                    <option value="5">Água dos Poços</option>
+                                    <option value="6">Água de Rede Pública</option>
+                                    <option value="7">Inexistência de Água</option>
+                                    <option value="8">Água por região e tipo de abastecimento</option>
                                 </select>                 
                             </div>
 
@@ -349,7 +403,7 @@
                                 </div>
                                 
                                 <select id="tipoGrafico">
-                                    <option value="barra">Barra</option>
+                                    <option value="mapa" id="mapa">Mapa</option>
                                 </select>                 
                             </div>
 
@@ -370,7 +424,7 @@
 
                 <div style="width: 100%;" align="left">
                     <div id="grafico">
-                        <div class='tableauPlaceholder' id='viz1562707001624' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pn&#47;pnsdatadiseases&#47;p_general_s&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='pnsdatadiseases&#47;p_general_s' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pn&#47;pnsdatadiseases&#47;p_general_s&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1562707001624');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        <div class='tableauPlaceholder' id='viz1562957701456' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;Insfraestrutura_nas_escolas&#47;P_AguaFiltrada_mapa&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Insfraestrutura_nas_escolas&#47;P_AguaFiltrada_mapa' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;Insfraestrutura_nas_escolas&#47;P_AguaFiltrada_mapa&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1562957701456');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                     </div>
                 </div>
             </div>
@@ -412,7 +466,7 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
-    <script src="../../dist/js/infografico_saude.js"></script>
+    <script src="../../dist/js/infografico_infraestrutura_Agua.js"></script>
 
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>

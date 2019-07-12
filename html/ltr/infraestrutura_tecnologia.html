@@ -236,7 +236,7 @@
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link active" aria-expanded="false" data-toggle="collapse" data-target="#seguranca-itens">
+                            <a class="sidebar-link" aria-expanded="false" data-toggle="collapse" data-target="#seguranca-itens">
                                 <i class="mdi mdi-security-home"></i>
                                 <span class="hide-menu">Segurança</span>
                             </a>
@@ -273,7 +273,7 @@
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link" aria-expanded="false" data-toggle="collapse" data-target="#infraestrutura-itens">
+                            <a class="sidebar-link active" aria-expanded="false" data-toggle="collapse" data-target="#infraestrutura-itens">
                                 <i class="mdi mdi-nfc-variant"></i>
                                 <span class="hide-menu">Infraestrutura</span>
                             </a>
@@ -345,7 +345,7 @@
                             <li class="breadcrumb-item">
                                 <a href="index.html">Início</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Segurança
+                            <li class="breadcrumb-item active" aria-current="page">Saúde
                             </li>
                         </ol>
                     </nav>
@@ -357,7 +357,7 @@
             <!--#########-->
             <div style="margin: 20px 0px; padding: 10px 20px 0 0; background: #FFF; color: black;" align="center">
                 <label id="legenda">
-                    Total de Homicídios (em milhares) registrados por cada estado no Brasil.
+                    Laboratório de informática nas escolas por estados
                 </label>
             </div>
             <!--#########-->
@@ -376,17 +376,14 @@
                     
                             <div class="form-group">
                                 <div>
-                                    Tipo de Crime:
+                                    Menu:
                                 </div>
                                 
                                 <select id="selectOption">
-                                    <option value="1">Homicídio Doloso</option>
-                                    <option value="2">Latrocínio</option>
-                                    <option value="3">Lesão Corporal Seguida de Morte</option>
-                                    <option value="4">Policiais Civis e Militares Mortos em serviço</option>
-                                    <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
-                                    <option value="6">Morte Decorrente de Intervenção Policial</option>
-                                    <option value="7">Mortes Violentas Intencionais - MVI</option>
+                                    <option value="1">Laboratório de Informática</option>
+                                    <option value="2">Laboratório de Ciências</option>
+                                    <option value="3">Acesso a Internet</option>
+                                    <option value="4">Todas as Tecnologias</option>
                                 </select>                 
                             </div>
 
@@ -402,12 +399,7 @@
                                 </div>
                                 
                                 <select id="tipoGrafico">
-                                    <option value="forma">Forma</option>
-                                    <option value="barra">Barra</option>
-                                    <option value="rosca">Rosca</option>
-                                    <option value="linhaDoTempo">Linha do Tempo</option>
-                                    <option value="mapa2016">Mapa 2016</option>
-                                    <option value="mapa2017">Mapa 2017</option>
+                                    <option value="mapa" id="mapa">Mapa</option>
                                 </select>                 
                             </div>
 
@@ -427,17 +419,12 @@
             <div class="row">
 
                 <div style="width: 100%;" align="left">
-                    <div id="grafico"></div>
+                    <div id="grafico">
+                        <div class='tableauPlaceholder' id='viz1562959939438' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;Insfraestrutura_nas_escolas&#47;P_T_LabInformatica&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Insfraestrutura_nas_escolas&#47;P_T_LabInformatica' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;Insfraestrutura_nas_escolas&#47;P_T_LabInformatica&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1562959939438');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
                 </div>
             </div>
-
-
-            <!-- Fonte dos dados -->
-            <div style="margin: 20px 0px; padding: 10px 20px; background: #FFF; color: black;" align="center">
-                <a href="http://www.forumseguranca.org.br/publicacoes/anuario-brasileiro-de-seguranca-publica-2018/" class="btn btn-outline-danger">Fonte da Base de Dados</a>
-            </div>
-            <!-- Fonte dos dados -->
-
+            
 
             <!-- ============================================================== -->
             <!-- footer -->
@@ -475,7 +462,7 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
-    <script src="../../dist/js/infografico_seguranca.js"></script>
+    <script src="../../dist/js/infografico_infraestrutura_tecnologia.js"></script>
 
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
