@@ -142,7 +142,7 @@
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false" data-toggle="collapse" data-target="#saude-itens">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link active" aria-expanded="false" data-toggle="collapse" data-target="#saude-itens">
                                 <i class="mdi mdi-hospital"></i>
                                 <span class="hide-menu">Saúde</span>
                             </a>
@@ -215,7 +215,7 @@
                         <li class="sidebar-item">
 
                             <!-- ELEMENTO PRINCIPAL -->
-                            <a class="sidebar-link active" aria-expanded="false" data-toggle="collapse" data-target="#seguranca-itens">
+                            <a class="sidebar-link" aria-expanded="false" data-toggle="collapse" data-target="#seguranca-itens">
                                 <i class="mdi mdi-security-home"></i>
                                 <span class="hide-menu">Segurança</span>
                             </a>
@@ -324,7 +324,7 @@
                             <li class="breadcrumb-item">
                                 <a href="index.html">Início</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Segurança
+                            <li class="breadcrumb-item active" aria-current="page">Saúde
                             </li>
                         </ol>
                     </nav>
@@ -334,10 +334,31 @@
             <!--#########-->
             <!-- LEGENDA -->
             <!--#########-->
-            <div style="margin: 20px 0px; padding: 10px 20px 0 0; background: #FFF; color: black;" align="center">
-                <label id="legenda">
-                    Total de Homicídios (em milhares) registrados por cada estado no Brasil.
-                </label>
+            <div style="margin: 20px 0px; padding: 10px 20px; background: #FFF; color: black;">
+                
+                <div id="definicao">
+                    <p>
+                        <ul>
+                            <li>
+                                <span class="negrito">Angina - </span> Dor ou desconforto no peito, sendo classificada em: angina grau 1 - dor ou desconforto no peito ao subir ladeira ou um lance de escadas, ou ao caminhar rápido no plano e não sentir a mesma dor ou desconforto quando no plano em velocidade normal ou em repouso; Pesquisa Nacional de Saúde 2013 Percepção do estado de saúde, estilos de vida e doenças crônicas e angina grau 2 - dor ou desconforto no peito ao caminhar em lugar plano, em velocidade normal.
+                            </li>
+                            <br>
+                            <li>
+                                <span class="negrito">Recurso para locomoção - </span>Utilizar muleta, bengala ou cadeira de rodas para auxiliar na locomoção.
+                            </li>
+                            <br>
+                            <li>
+                                <span class="negrito">Autoavaliação de saúde - </span>Nível relativo de saúde referente a como cada indivíduo classificaria sua saúde.   
+                            </li>
+                            <br>
+                            <li>
+                                <span class="negrito">Infográfico - </span><label id="legenda">
+                                Total de pessoas de 18 anos ou mais de idade referente a sua percepção de saúde e locomoção, com indicação do intervalo de confiança de 95%, segundo as Unidades da Federação - 2013</label>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
             </div>
             <!--#########-->
             <!-- LEGENDA -->
@@ -355,17 +376,18 @@
                     
                             <div class="form-group">
                                 <div>
-                                    Tipo de Crime:
+                                    Menu:
                                 </div>
                                 
                                 <select id="selectOption">
-                                    <option value="1">Homicídio Doloso</option>
-                                    <option value="2">Latrocínio</option>
-                                    <option value="3">Lesão Corporal Seguida de Morte</option>
-                                    <option value="4">Policiais Civis e Militares Mortos em serviço</option>
-                                    <option value="5">Policiais Civis e Militares Mortos fora de serviço</option>
-                                    <option value="6">Morte Decorrente de Intervenção Policial</option>
-                                    <option value="7">Mortes Violentas Intencionais - MVI</option>
+                                    <option value="1">Percepção Por Estado</option>
+                                    <option value="2">Percepção Por Região</option>
+                                    <option value="3">Percepção Por Estado Baseado no Sexo</option>
+                                    <option value="4">Percepção Por Região Baseado no Sexo</option>
+                                    <option value="5">Percepção Por Estado Baseado na Idade</option>
+                                    <option value="6">Percepção Por Região Baseado na Idade</option>
+                                    <option value="7">Percepção Por Estado Baseado na Raça</option>
+                                    <option value="8">Percepção Por Região Baseado na Raça</option>
                                 </select>                 
                             </div>
 
@@ -381,12 +403,7 @@
                                 </div>
                                 
                                 <select id="tipoGrafico">
-                                    <option value="forma">Forma</option>
                                     <option value="barra">Barra</option>
-                                    <option value="rosca">Rosca</option>
-                                    <option value="linhaDoTempo">Linha do Tempo</option>
-                                    <option value="mapa2016">Mapa 2016</option>
-                                    <option value="mapa2017">Mapa 2017</option>
                                 </select>                 
                             </div>
 
@@ -405,18 +422,20 @@
             <!--#########-->
             <div class="row">
 
-                <div style="width: 100%; height: 500px;" align="left">
-                    <div id="grafico"></div>
+                <div style="width: 100%;" align="left">
+                    <div id="grafico">
+                        <div class='tableauPlaceholder' id='viz1564059545961' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pn&#47;pnsdataperception&#47;p_general_s&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='pnsdataperception&#47;p_general_s' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pn&#47;pnsdataperception&#47;p_general_s&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564059545961');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </div>
                 </div>
             </div>
-
+            
 
             <!-- Fonte dos dados -->
             <div class="button_bd">
-                <a href="http://www.forumseguranca.org.br/publicacoes/anuario-brasileiro-de-seguranca-publica-2018/" class="btn btn-outline-info" target="_blank">Fonte da Base de Dados</a>
+                <a href="" class="btn btn-outline-info">Fonte da Base de Dados</a>
             </div>
             <!-- Fonte dos dados -->
-
+            
 
             <!-- ============================================================== -->
             <!-- footer -->
@@ -454,7 +473,7 @@
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
-    <script src="../../dist/js/infografico_seguranca.js"></script>
+    <script src="../../dist/js/infografico_saude_perception.js"></script>
 
     <!--chartis chart-->
     <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>

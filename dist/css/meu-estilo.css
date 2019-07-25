@@ -89,6 +89,14 @@ Cores - Final
 /********************************************************************************
 Pagina - Inicio
 *********************************************************************************/
+.button_bd{
+	margin: 20px 0px;
+	padding: 10px 20px;
+	background: #FFF;
+	color: black;
+	text-align: center;
+}
+
 .menu{
 	background-color: #293440;
 	text-align: right;
